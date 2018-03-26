@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.left {
+    width: 15%;
+    max-width: 200px;
+    min-height: 100%;
+    height: 500px;
+    float: left;
+    background: lightcyan;
+}
+
+.right {
+    float: left;
+    min-height: 100%;
+    height: 500px;
+    min-width: calc(100% - 200px);
+    width: 85%;
+    background: lightblue;
+}
+
+.right::after {
+    content: "";
+    clear: both;
+}
+
+.c-main {
+    width: 48px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    background: lightblue;
+    /* margin: auto; */
+    left: 200px;
+}
+
+.c-main:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 16px solid transparent;
+    border-left: 16px solid transparent;
+    /*方框上部分背景颜色为透明*/
+    border-bottom: 16px solid rgb(247, 67, 67);
+    /*方框下部分背景为透明*/
+    border-right: 16px solid rgb(247, 67, 67);
+    /*箭头背景颜色*/
+    /*绝对定位1*/
+    top: 0;
+    left: -32px;
+    /*距离顶部位置偏移量2*/
+    /* left: 9px; */
+    /*距离左边位置偏移量3*/
+    /*123都是控制显示位置的*/
+}
+
+.c-main:after {
+    content: '';
+    border-left: 16px solid #137a13;
+    border-top: 16px solid #137a13;
+    border-bottom: 16px solid transparent;
+    border-right: 16px solid transparent;
+    /*箭头背景颜色，覆盖前面的#eee颜色，使其颜色与整体颜色一致*/
+    position: absolute;
+    top: 0;
+    right: -32px;
+}

@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    padding: 10px 60px;
+    background: lightgoldenrodyellow
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.min-width-100 {
+    min-width: 100%;
+}
+
+.width-23 {
+    width: 23%;
+}
+
+code {
+    background-color: #fff5f5;
+    color: #ff502c;
+    font-size: .87em;
+    padding: .065em .4em;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.bg-color-ccc {
+    background: #ccc;
+}
+
+.position-rel {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200px;
+    background: lightgreen;
+}
+
+.son {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: calc(-50px);
+    margin-top: calc(-50px);
+    width: 100px;
+    height: 100px;
+    background: lightgray
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.line-height-100 {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: lightsteelblue;
+    color: midnightblue;
+}
+
+.img-virticle-parent {
+    height: 300px;
+    font-size: 0;
+    line-height: 300px;
+    text-align: center;
+    background: lightcyan;
+}
+
+.img-virticle {
+    vertical-align: middle;
+}
+
+.w-200 {
+    width: 200px;
+}
+
+.h-200 {
+    height: 200px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.dispaly-fiex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightpink;
+}
+
+.t-2-center {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 0;
+    background: beige;
+}
+
+.virticle-center {
+    vertical-align: center;
+    font-size: 16px;
+}
+
+.relative {
+    position: relative;
+}
+
+.son-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%)
+}
+
+.display-flex {
+    display: flex;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.bg-color-white {
+    background: azure;
+}
+
+.h-100 {
+    height: 100px;
+}
+
+.flex-middle-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-color-yellow {
+    background: lightyellow;
+}
+
+.aligin-self-center {
+    align-self: center;
+}
+
+.vh-center {
+    margin: 5vh auto;
+    transform: translateY(50%)
+}
+
+.w-100 {
+    width: 100px;
+}

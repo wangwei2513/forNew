@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>布局</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="min-width-100">
+  <h3>水平居中</h3>
+  <h6>文本、行内、行内块级元素</h6>
+  <div class="text-align-center">
+    <span>1、文本、行内、行内块级元水平居中:text-align:center</span>
+  </div>
+  <div class="margin-auto width-23">2、单个块级元素 margin:0 auto//必须设置宽度、不能auto、且要小于父元素否则无效</div>
+  <div class="text-align-center">
+    <div class="inline-block width-23 bg-color-ccc">3、多个块级元素</div>
+    <div class="inline-block width-23 bg-color-ccc">属性继承会影响到后代</div>
+    <div class="inline-block width-23 bg-color-ccc">3</div>
+    <div class="inline-block width-23 bg-color-ccc">4</div>
+  </div>
+  <div class="position-rel">
+    <div class="son">水平垂直居中-reletive\absolute</div>
+  </div>
+  <div class="flex">
+    <div>任</div>
+    <div>意</div>
+    <div>个</div>
+    <div>元</div>
+    <div>素</div>
+    <div>水平</div>
+    <div>轴</div>
+    <div>对</div>
+    <div>称</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+  <ul>
+    <h3>总结</h3>
+    <li>1、对于水平居中，我们应该先考虑，哪些元素有自带的居中效果，最先想到的应该就是
+      <code>text-align:center</code> 了，但是这个只对行内内容有效，所以我们要使用
+      <code>text-align:center</code> 就必须将子元素设置为
+      <code>display: inline;</code> 或者
+      <code>display: inline-block;</code> ；</li>
+    <li>2、其次就是考虑能不能用
+      <code>margin: 0 auto;</code> ，因为这都是一两句代码能搞定的事，实在不行就是用绝对定位去实现了。</li>
+    <li>3、移动端能用flex就用flex，简单方便，灵活并且功能强大，无愧为网页布局的一大利器！</li>
+  </ul>
+  <h3>垂直居中</h3>
+  <div class="line-height-100">
+    <span>1、单行文本、行内元素、行内块级元素垂直居中</span>
+  </div>
+  <div class="img-virticle-parent">
+    <img src="./images/a.jpg" alt="绝地求生" title="绝地求生" class="margin-auto img-virticle w-200 h-200">
+    <span class="font-size-16">2、图片垂直居中</span>
+  </div>
+  <div class="dispaly-fiex-center h-200">
+    <div>dispaly-flex-center</div>
+  </div>
+  <ol>
+    <h3>总结</h3>
+    <li>对于垂直居中，最先想到的应该就是
+      <code>line-height</code> 了，但是这个只能用于行内内容；</li>
+    <li>其次就是考虑能不能用
+      <code>vertical-align: middle;</code> ，不过这个一定要熟知原理才能用得顺手，建议看下
+      <a href="https://link.juejin.im?target=http%3A%2F%2Fwww.zhangxinxu.com%2Fwordpress%2F2015%2F08%2Fcss-deep-understand-vertical-align-and-line-height%2F">vertical-align和line-height的基友关系；</a>
+    </li>
+    <li>然后便是绝对定位，虽然代码多了点，但是胜在适用于不同情况；</li>
+    <li>移动端兼容性允许的情况下能用flex就用flex</li>
+  </ol>
+  <h3>水平垂直居中</h3>
+  <div class="t-2-center">
+    <span class="virticle-center">行内、行内块级、图片水平垂直居中</span>
+  </div>
+  <!-- <div class="relative">
+    <div class="son-absolute">绝对定位</div>
+  </div> -->
+  <div class="display-flex h-100 bg-color-white">
+    <div class="margin-auto">flex居中1</div>
+  </div>
+  <div class="flex-middle-2 h-100 bg-color-yellow">
+    <div>flex居中2</div>
+  </div>
+  <div class="flex h-100 bg-color-ccc">
+    <div class="aligin-self-center">flex居中3</div>
+  </div>
+  <div class="vh-center w-100">
+    <div>视口居中</div>
+  </div>
+</body>
+
+</html>
