@@ -1,5 +1,5 @@
 import { getToken,removeToken } from '@/utils/auth'
-import { resolve } from 'url'
+
 const user = {
   state: {
     user: '',
