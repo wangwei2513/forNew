@@ -26,6 +26,7 @@
            <el-checkbox v-for="check in formData.checkeList" :key="check.id" :label="check"></el-checkbox>
          </el-checkbox-group>
        </el-form-item>
+       <el-form-item label=""></el-form-item>
      </el-form>
    </div>
 </template>
